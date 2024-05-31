@@ -1197,7 +1197,7 @@ aside {
 /* BLOG */
 
 .blog-section {
-    padding: 45px 100px 0 100px;
+    padding: 45px 0 0 0;
     background-color: #FFFFFF;
     display: flex;
     align-items: flex-start;
@@ -1223,6 +1223,42 @@ aside {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.blog-left-sidebar, .blog-right-sidebar {
+    width: calc((1000% - 1058px) / 2);
+    padding: 0 40px;
+}
+
+.ad {
+    width: 100%;
+    background-color: #ffa7a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.ad > h2 {
+    font-family: "FONTSPRING DEMO - Quiche Flare ExtraBold", serif;
+    padding: 5px;
+    color: #4A4A4A;
+}
+
+.blog-page {
+    flex-direction: column;
+    width: 100%;
+}
+
+.blog-page-item-title {
+    font-size: 14px;
+    width: 100%;
+}
+
+.blog-page-item-content {
+    width: 100%;
+    margin-left: 0;
 }
 
 .blog-content-blog-page {
