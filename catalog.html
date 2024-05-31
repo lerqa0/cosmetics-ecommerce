@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/default-header.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="icon" href="./sources/mini-logo.png"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="big-header">
+        <img src="./sources/image-header.png" alt="image-heeader">
+        <span class="big-header-title">catalog</span>
+    </div>
+    <section class="default-header default-header">
+        <div class="default-header-content">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="item"><a href="#">catalog</a></li>
+                    <li class="item"><a href="./about.html">despre noi</a></li>
+                    <li class="item"><a href="#">contacte</a></li>
+                </ul>
+            </nav>
+            <a href="./home.html" class="header-logo">
+                refresh <i>space</i>
+            </a>
+            <div class="other-menu">
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <img src="./sources/search.png" alt="lupa">
+                    </div>
+                    <span class="search-text">
+                        caută produsul
+                    </span>
+                    <div class="close-icon">
+                        <img src="./sources/close.png" alt="x">
+                    </div>
+                </div>
+                <div class="icons">
+                    <a href="./bag.html" class="icon add-bag">
+                        <img src="./sources/black-add-bag.png" alt="bag">
+                    </a>
+                    <div class="icon favorites">
+                        <img src="./sources/black-favorites.png" alt="favorites">
+                    </div>
+                    <a href="./log-in.html" class="icon account">
+                        <img src="./sources/black-user.png" alt="user">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="fake-header default-fake-header"></div>
+
+<main>
+    <section class="catalog-container">
+        <div class="mobile-search">
+            <div class="mobile-search-container">
+                <img src="./sources/search.png" alt="search">
+                <input type="text" placeholder="Caută produsul" id="search-product">
+            </div>
+        </div>
+        <aside class="left-sidebar">
+            <div class="acor-container">
+                <div class="acor-item">
+                    <input type="checkbox" name="acor" id="skincare" data-id="1"/>
+                    <label for="skincare">Îngrijirea pielii</label>
+                    <div class="acor-body">
+                        <ul class="list category-level-2">
+                            <li class="list-item main-item" data-id="1">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="1">
+                                    Cremă pentru față
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <ul class="list category-level-3">
+                                    <li class="list-item" data-id="1">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="1">
+                                            Anti Age
+                                        </label>
+                                    </li>
+                                    <li class="list-item" data-id="2">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="2">
+                                            Hidratantă
+                                        </label>
+                                    </li>
+                                    <li class="list-item" data-id="3">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="3">
+                                            Nutritivă
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list category-level-2">
+                            <li class="list-item main-item" data-id="2">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="2">
+                                    Măști pentru față
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <ul class="list category-level-3">
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="4">
+                                            Din țesătură
+                                        </label>
+                                    </li>
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="5">
+                                            De noapte
+                                        </label>
+                                    </li>
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="6">
+                                            Pathc-uri
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list category-level-2">
+                            <li class="list-item main-item" data-id="3">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="3">
+                                    Curățarea pielii
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <ul class="list category-level-3">
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="7">
+                                            Demachiere
+                                        </label>
+                                    </li>
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="8">
+                                            Uleiuri
+                                        </label>
+                                    </li>
+                                    <li class="list-item">
+                                        <label>
+                                            <input type=checkbox class="filter-input" value="9">
+                                            Spume/geluri
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="acor-item">
+                    <input type="checkbox" name="acor" id="cosmetics" data-id="2"/>
+                    <label for="cosmetics">Cosmetică</label>
+                    <div class="acor-body">
+                        <ul class="list category-level-2">
+                            <li class="list-item">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="4">
+                                    Ochi
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list category-level-2">
+                            <li class="list-item">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="5">
+                                    Buze
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list category-level-2">
+                            <li class="list-item">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="6">
+                                    Ten
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="acor-item">
+                    <input type="checkbox" name="acor" id="hair-n-body" data-id="3"/>
+                    <label for="hair-n-body">Păr și corp</label>
+                    <div class="acor-body">
+                        <ul class="list category-level-2">
+                            <li class="list-item">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="7">
+                                    Produse pentru păr
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list category-level-2">
+                            <li class="list-item">
+                                <label>
+                                    <input type=checkbox class="filter-input" value="8">
+                                    Produse pentru corp
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="catalog">
+            <div href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="cart">
+                        <img src="./sources/mobile-cart.png" alt="cart">
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/1.png" alt="product-1">
+                    </div>
+                </div>
+                <a href="#" class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">150ml</span>
+                        <span class="card-title-element">316mdl</span>
+                    </div>
+                    <span class="card-product-title">Ulei Hidrofil Cica 1%</span>
+                    <span class="card-product-brand">A-Derma</span>
+                </a>
+            </div>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/2.png" alt="product-2">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">200ml</span>
+                        <span class="card-title-element">182mdl</span>
+                    </div>
+                    <span class="card-product-title">Spumă De Curățare</span>
+                    <span class="card-product-brand">A'pieu</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/3.png" alt="product-3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">15ml</span>
+                        <span class="card-title-element">40mdl</span>
+                    </div>
+                    <span class="card-product-title">Mască Din Țesătură</span>
+                    <span class="card-product-brand">Round Lab</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/4.png" alt="product-4">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">100ml</span>
+                        <span class="card-title-element">129mdl</span>
+                    </div>
+                    <span class="card-product-title">Dokdo Apă micelară</span>
+                    <span class="card-product-brand">round lab</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/5.png" alt="product-1">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">96ml</span>
+                        <span class="card-title-element">120mdl</span>
+                    </div>
+                    <span class="card-product-title">Patch-uri anti-inflamatorii</span>
+                    <span class="card-product-brand">Missha</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/6.png" alt="product-2">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">50ml</span>
+                        <span class="card-title-element">216mdl</span>
+                    </div>
+                    <span class="card-product-title">Cremă cu vitamine Bad Vita</span>
+                    <span class="card-product-brand">A'pieu</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/7.png" alt="product-3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">100ml</span>
+                        <span class="card-title-element">184mdl</span>
+                    </div>
+                    <span class="card-product-title">Cremă revitalizantă hidratantă</span>
+                    <span class="card-product-brand">A-derma</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/8.png" alt="product-4">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">200ml</span>
+                        <span class="card-title-element">344mdl</span>
+                    </div>
+                    <span class="card-product-title">Ulei hidrofil Gentle Deep</span>
+                    <span class="card-product-brand">Frudia</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/9.png" alt="product-1">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">10ml</span>
+                        <span class="card-title-element">15mdl</span>
+                    </div>
+                    <span class="card-product-title">Mască revitalizantă Green</span>
+                    <span class="card-product-brand">jay jun</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/10.png" alt="product-2">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">150ml</span>
+                        <span class="card-title-element">191mdl</span>
+                    </div>
+                    <span class="card-product-title">Spumă de curățare Ppoyan</span>
+                    <span class="card-product-brand">A-derma</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/11.png" alt="product-3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">50ml</span>
+                        <span class="card-title-element">299mdl</span>
+                    </div>
+                    <span class="card-product-title">Cremă-gel hidratant Okra</span>
+                    <span class="card-product-brand">jay jun</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="img-product">
+                        <img src="./products/12.png" alt="product-4">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">50ml</span>
+                        <span class="card-title-element">211mdl</span>
+                    </div>
+                    <span class="card-product-title">Cremă cu efect de reînnoire</span>
+                    <span class="card-product-brand">a'pieu</span>
+                </div>
+            </a>
+        </section>
+        <aside class="right-sidebar">
+            <div class="sidebar-item">
+                <span class="sidebar-item-title">
+                    Brand
+                </span>
+                <div class="sidebar-item-content">
+                    <label>
+                        <input type=checkbox class="brand-input" value="A-Derma">
+                        A-Derma
+                    </label>
+                    <label>
+                        <input type=checkbox class="brand-input" value="A'pieu">
+                        A'pieu
+                    </label>
+                    <label>
+                        <input type=checkbox class="brand-input" value="Frudia">
+                        Frudia
+                    </label>
+                    <label>
+                        <input type=checkbox class="brand-input" value="Jay Jun">
+                        Jay Jun
+                    </label>
+                    <label>
+                        <input type=checkbox class="brand-input" value="Missha">
+                        Missha
+                    </label>
+                    <label>
+                        <input type=checkbox class="brand-input" value="Round Lab">
+                        Round Lab
+                    </label>
+                </div>
+            </div>
+            <div class="sidebar-item">
+                <span class="sidebar-item-title">Preț</span>
+                <div class="sidebar-item-content">
+                    <label>De la <input type="text" class="text-input" id="from-price">MDL</label>
+                    <label>Până la <input type="text" class="text-input" id="to-price">MDL</label>
+                </div>
+            </div>
+            <div class="sidebar-item">
+                <span class="sidebar-item-title">Sortare</span>
+                <div class="sidebar-item-content">
+                    <label>
+                        <input type=radio name="sort" id="default-sort" checked>
+                        Implicit
+                    </label>
+                    <label>
+                        <input type=radio name="sort" id="asc-sort">
+                        Crescător
+                    </label>
+                    <label>
+                        <input type=radio name="sort" id="desc-sort">
+                        Descrescător
+                    </label>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <section class="pagination">
+        <div class="pagination-left">
+            <img src="./sources/pagination-left.png" alt="pagination-left">
+        </div>
+        <div class="pagination-content">
+            <a href="" class="pagination-item page-active">1</a>
+            <a href="" class="pagination-item">2</a>
+            <a href="" class="pagination-item">3</a>
+            <a href="" class="pagination-item">4</a>
+            <a href="" class="pagination-item">5</a>
+        </div>
+        <div class="pagination-right">
+            <img src="./sources/pagination-right.png" alt="pagination-right">
+        </div>
+    </section>
+    <div class="infinite-scroll">
+        <button class="default-button">Vezi mai multe</button>
+    </div>
+</main>
+
+<footer>
+    <section class="footer-primary">
+        <div class="footer-group">
+            <span class="footer-item-title">refresh space</span>
+            <form action="" class="send-message">
+                <p>Abonează-te la noutățile Refresh Space pentru a primi notificări despre produsele noi, oferte și
+                    reduceri.</p>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <button type="submit">
+                        <img src="./sources/arrow-right-button.png" alt="arrow-right">
+                    </button>
+                </div>
+                <label>
+                    <input type="checkbox" required>
+                    Accept termenii Politicii de Confidențialitate
+                </label>
+            </form>
+        </div>
+        <div class="footer-group footer-group-catalog">
+            <span class="footer-item-title">
+                Catalog
+            </span>
+            <span class="footer-item catalog-link" data-id="1">
+                Îngrijirea pielii
+            </span>
+            <span class="footer-item catalog-link" data-id="3">
+                Păr & Corp
+            </span>
+            <span class="footer-item catalog-link" data-id="2">
+                Cosmetică
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Suport
+            </span>
+            <span class="footer-item">
+                Plată & Livrare
+            </span>
+            <span class="footer-item">
+                Returnare
+            </span>
+            <span class="footer-item">
+                Cooperare
+            </span>
+            <span class="footer-item">
+                Întrebări frecvente
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Suplimentar
+            </span>
+            <a href="./about.html" class="footer-item">
+                Despre Noi
+            </a>
+            <a href="./blog.html" class="footer-item">
+                Blog
+            </a>
+            <span class="footer-item">
+                Oferte publice
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Adrese
+            </span>
+            <span class="footer-item">
+                str. Lera 26, Lvov, LeraLand
+            </span>
+            <span class="footer-item">
+                Luni - Vineri
+            </span>
+            <span class="footer-item gray main-gray">
+                 09:00 AM - 09:00 PM
+            </span>
+            <span class="footer-item gray">
+                +373 76 783 043
+            </span>
+            <span class="footer-item gray main-gray">
+                lera.questions@lera.com
+            </span>
+        </div>
+    </section>
+    <section class="footer-secondary">
+        <span class="footer-item-title secondary-title">&#169; 2024 REFRESH SPACE</span>
+        <span class="footer-item-title secondary-title">Politica de Condidențialitate</span>
+        <span class="footer-item-title secondary-title">Politica de Cookies</span>
+        <span class="footer-item-title secondary-title">Termeni și Condiții</span>
+        <span class="footer-item-title secondary-title">Politici corporative</span>
+        <span class="footer-item-title secondary-title">Toate Drepturile Sunt Rezervate</span>
+    </section>
+</footer>
+<div class="fake-mobile-footer"></div>
+<section class="mobile-footer">
+    <a href="home.html">
+        <img src="./sources/mobile-home.png" alt="">
+    </a>
+    <a href="catalog.html">
+        <img src="./sources/mobile-catalog-active.png" alt="">
+    </a>
+    <a href="bag.html">
+        <img src="./sources/mobile-cart.png" alt="">
+    </a>
+    <a href="#">
+        <img src="./sources/mobile-favorites.png" alt="">
+    </a>
+    <a href="log-in.html">
+        <img src="./sources/mobile-account.png" alt="">
+    </a>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/products.js"></script>
+<script src="./js/catalog.js"></script>
+<script src="./js/footer.js"></script>
+</body>
+</html>

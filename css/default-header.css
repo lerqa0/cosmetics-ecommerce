@@ -1,0 +1,60 @@
+.default-header {
+    z-index: 1;
+    position: relative;
+    height: 72px;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+.header-logo {
+    font-family: "FONTSPRING DEMO - Quiche Flare ExtraBold", serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.big-header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.big-header > img {
+    width: 100%;
+}
+
+.big-header-title {
+    position: absolute;
+    top: 120px;
+    font-size: 70px;
+    font-family: "FONTSPRING DEMO - Quiche Flare ExtraBold", serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i {
+    color: #000000;
+    font-size: 30px;
+}
+
+.default-header-content {
+    width: calc(100% - 160px);
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.item > a {
+    color: #000000;
+}
+
+.search-text {
+    color: #FFFFFF;
+}
+
+.fake-header {
+    height: calc(250px - 72px);
+}

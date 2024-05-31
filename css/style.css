@@ -1,0 +1,1529 @@
+@import "main.css";
+
+.big-header {
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.fake-header {
+    height: calc(100vh - 72px);
+    display: block;
+}
+
+.img > img {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo, i {
+    font-family: 'FONTSPRING DEMO - Quiche Flare ExtraBold', serif;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    margin-right: 50px;
+    margin-bottom: -30px;
+}
+
+.little-header {
+    z-index: 1;
+    position: relative;
+    height: 72px;
+    background: linear-gradient(184deg, rgba(249, 216, 165, 0.00) 30.05%, #9f8861 150.88%);
+}
+
+.little-header-content {
+    width: calc(100% - 160px);
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.item > a, .search-text {
+    color: white;
+}
+
+.item {
+    font-size: 18px;
+}
+
+.search-text {
+    font-size: 16px;
+}
+
+.search-bar {
+    background-color: #793A29;
+    opacity: 60%;
+    width: 215px;
+    height: 35px;
+    display: flex;
+    border-radius: 26px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-icon > img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu > .menu-list {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.other-menu {
+    display: flex;
+    align-items: center;
+    width: 358px;
+    justify-content: space-between;
+}
+
+.icons {
+    width: 117px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 19px;
+}
+
+.logo-container {
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+}
+
+.catalog-button {
+    width: 128px;
+    height: 128px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    transition: 8ms ease-in-out;
+
+}
+
+.catalog-button:hover {
+    background-color: rgba(217, 217, 217, 0.2);
+}
+
+.text-button-catalog {
+    font-size: 26px;
+    color: white;
+}
+
+.slogan-item {
+    font-family: 'Modulus Pro', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 6px 1px 18px #FFF;
+    letter-spacing: 2px;
+}
+
+.slogan {
+    margin-top: 220px;
+    margin-right: 50px;
+}
+
+.part1 {
+    color: #712D1A;
+}
+
+.part2 {
+    color: #A6A397;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.beautiful-title {
+    font-family: 'FONTSPRING DEMO - Quiche Flare ExtraBold', serif;
+    font-size: 80px;
+    color: #FFEFEF;
+    letter-spacing: 20px;
+    font-style: italic;
+    z-index: 1;
+    position: absolute;
+}
+
+.main-title {
+    font-family: 'Domine', serif;
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.category-text-on-hover {
+    visibility: hidden;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    font-family: "Smooch", sans-serif;
+    font-size: 34px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.category-item > img:hover + .category-text-on-hover {
+    visibility: visible;
+}
+
+.category-text-on-hover:hover {
+    visibility: visible;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.category-item {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category {
+    width: calc(100% - 160px);
+    padding: 0 80px;
+    max-width: 100%;
+}
+
+.partner {
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.25) inset;
+    width: calc(100% - 160px);
+    padding: 20px 80px;
+    margin-top: 68px;
+    margin-bottom: 100px;
+}
+
+.partner-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog {
+    padding: 20px 200px;
+    background-color: #FFEFEF;
+}
+
+.blog-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.title-container > .main-title {
+    position: relative;
+}
+
+.title-container > .main-title > span {
+    font-family: 'Domine', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.title-container > .main-title img {
+    position: absolute;
+    top: 15px;
+    right: -100px;
+}
+
+.blog-content {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 160px;
+    row-gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-block {
+    width: auto;
+}
+
+.blog-item {
+    width: calc(50% - 100px);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-item > img {
+    width: 300px;
+}
+
+.blog-item-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.blog-item-date, .blog-item-link {
+    text-transform: uppercase;
+}
+
+.blog-item-date {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
+    font-weight: bold;
+}
+
+.blog-item-description {
+    color: rgba(0, 0, 0, 0.80);
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.blog-item-link {
+    margin-top: 10px;
+    font-family: "TT Chocolates Trl", sans-serif;
+    color: #000000;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.blog-item-title {
+    font-size: 20px;
+    font-family: "Domine", serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.blog-item:hover {
+    background: rgba(255, 153, 171, 0.40);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.blog-footer {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-rounded {
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out .4s;
+    background-color: #FF99AB;
+    padding: 15px 55px;
+    color: #FFFFFF;
+    font-family: "Modulus Pro", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.button-rounded:hover {
+    background-color: rgba(255, 153, 171, 0.8);
+}
+
+.control {
+    cursor: pointer;
+}
+
+.reviews {
+    width: calc(100% - 160px);
+    padding: 0 80px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.review-author-image {
+    object-fit: contain;
+    position: absolute;
+}
+
+.review-small-info {
+    display: flex;
+    gap: 10px;
+}
+
+.review-item {
+    width: 30%;
+    border-top-left-radius: 30%;
+    background-color: #FFEFEF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.review-date {
+    font-size: 14px;
+}
+
+.review-item-info {
+    margin-left: 70px;
+    background-color: #FFFFFF;
+    padding: 5px 0 10px 20px;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review-title {
+    font-weight: bold;
+}
+
+.review-description {
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.brand {
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beautiful-text {
+    font-family: 'FONTSPRING DEMO - Quiche Flare ExtraBold', serif;
+    font-size: 80px;
+    color: #FFEFEF;
+}
+
+.trl {
+    font-family: "TT Chocolates Trl", sans-serif;
+    font-size: 50px;
+    color: #FFEFEF;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #FFEFEF;
+}
+
+.footer-primary {
+    min-height: 100px;
+    border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-item {
+    font-family: "TT Chocolates Trl", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-item-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.secondary-title {
+    font-size: 14px;
+}
+
+.gray {
+    color: #686868;
+}
+
+.main-gray {
+    margin-top: -20px;
+    font-size: 16px;
+}
+
+.footer-secondary {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-secondary > .footer-item-title {
+    text-transform: none;
+}
+
+.send-message {
+    display: flex;
+    flex-direction: column;
+    /*gap: 16px;*/
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-group > input {
+    width: 350px;
+    background-color: #FFEFEF;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    outline: none;
+    transition: all .3s;
+}
+
+.form-group > input:hover {
+    margin-right: 10px;
+}
+
+.form-group > p {
+    font-family: "TT Chocolates Trl", sans-serif;
+}
+
+.form-group > button {
+    background-color: #FFEFEF;
+    border: none;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+/* END FOOTER */
+
+/* DELIVERY */
+.delivery {
+    padding: 50px 300px;
+}
+
+/* END DELIVERY */
+
+/* CATALOG */
+.catalog-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    position: relative;
+}
+
+.mobile-search {
+    display: none
+}
+
+.catalog {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFEFEF;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #FFEFEF;
+    height: 100%;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-product {
+    margin-top: 10px;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.card-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title-element {
+    font-family: "TT Chocolates Trl", serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-product-brand {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card-product-brand, .card-product-title {
+    text-transform: capitalize;
+}
+
+.card:hover .heart {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.card:hover .card-image {
+    background-color: #FFEFEF;
+}
+
+.card:hover .card-body {
+    background-color: rgba(255, 153, 171, 0.5);
+}
+
+.card:hover .cart {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.heart, .cart {
+    display: none;
+}
+
+.heart-container {
+    display: none;
+}
+
+.heart:hover .heart-container {
+    display: block;
+}
+
+
+/* CATALOG */
+
+/* ACCORDION */
+.acor-container {
+    width: 90%;
+    margin: 20px 0;
+}
+
+.acor-container .acor-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: "TT Chocolates Trl", sans-serif;
+    font-size: 16px;
+}
+
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+
+.acor-container label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #000000;
+    z-index: 100;
+    font-family: "TT Chocolates Trl", sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+
+.acor-container label:hover {
+    color: #000000;
+}
+
+.acor-item > input {
+    display: none;
+}
+
+.acor-item > label:before {
+    content: '\276F';
+    float: right;
+}
+
+.acor-container input:checked + label {
+    background-color: #FFEFEF;
+    color: #000000;
+}
+
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 10px 10px;
+}
+
+/* END ACCORDION */
+
+/* ASIDE */
+aside {
+    width: 15%;
+    padding: 0 50px;
+}
+
+.right-sidebar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-item-title {
+    font-size: 18px;
+    font-family: "TT Chocolates Trl", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sidebar-item-content > label {
+    margin-top: 8px;
+    display: block;
+}
+
+.sidebar-item-content > label > input {
+    margin-right: 10px;
+    accent-color: #FFEFEF;
+}
+
+.text-input {
+    margin: 0 10px;
+    width: 40px;
+}
+
+/* END ASIDE */
+
+/* PAGINATION */
+.pagination, .pagination-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination {
+    margin-bottom: 50px;
+}
+
+.pagination-item {
+    padding: 5px 10px;
+}
+
+.page-active {
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #FF99AB;
+}
+
+/* END PAGINATION */
+
+/* AUTH */
+.auth-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.column {
+    width: 50%;
+    height: 100vh;
+}
+
+.column > img {
+    width: 100%;
+    height: 100vh;
+}
+
+.form-auth-container {
+    background-color: #FFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-title {
+    position: absolute;
+    top: 50px;
+    font-family: "FONTSPRING DEMO - Quiche Flare ExtraBold", serif;
+    font-size: 40px;
+}
+
+.auth-title > i {
+    font-size: 40px;
+    color: #000000;
+}
+
+.form-title {
+    font-family: "TT Chocolates Trl", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.auth-form > .form-group > input {
+    width: 100%;
+}
+
+.auth-form > .form-group > input {
+    width: 100%;
+}
+
+.auth-form > .button-rounded {
+    margin: 10px auto;
+    width: 70%;
+}
+
+#toggle-show-password, #toggle-show-password-confirm {
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.sau {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button-social {
+    width: 100%;
+    border: 1px solid #858484;
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+}
+
+.footer > .underline {
+    text-decoration: underline;
+    color: #D1344F;
+}
+
+/* END AUTH */
+
+/* ABOUT US */
+.members {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.member {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member > .member-image {
+    position: absolute;
+    top: 0;
+}
+
+.member > .decor-image {
+    position: absolute;
+    top: 0;
+}
+
+#lerqa {
+    transform: rotate(180deg);
+}
+
+#meladze {
+    transform: rotate(215deg);
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 380px 0 380px;
+}
+
+.about-item {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-item > p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-item > .underline {
+    padding-top: 40px;
+    width: 400px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+/* END ABOUT US */
+
+/* SINGLE PRODUCT */
+.produs-container {
+    padding: 50px 365px 0 365px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /*flex-wrap: wrap;*/
+}
+
+.secondary-images > img:first-child {
+    height: 100px;
+    width: auto;
+}
+
+.secondary-images > img:last-child {
+    width: 100px;
+    height: auto;
+}
+
+.product-description {
+    padding: 80px 365px 0 365px;
+}
+
+.secondary-images {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.main-image > img, .secondary-images > img {
+    cursor: pointer;
+}
+
+.produs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.product-title {
+    font-family: "Domine", serif;
+    font-size: 22px;
+}
+
+.product-brand {
+    font-family: "TT Chocolates Trl", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+.product-specifications {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spec-item, .spec-content {
+    font-size: 18px;
+}
+
+.spec-title {
+    font-weight: bold;
+}
+
+.spec-content {
+    margin-left: 10px;
+}
+
+.cod-produs {
+    margin-top: 20px;
+}
+
+.product-price {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.product-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-actions > button:first-child {
+    width: 200px;
+}
+
+.product-actions > button {
+    font-size: 16px;
+}
+
+.pink-button {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FF99AB;
+    border: 1px solid #FF99AB;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+.pink-button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.pink-button-outline {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #FF99AB;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+.pink-button-outline:hover {
+    background-color: #FF99AB;
+    color: #FFFFFF;
+}
+
+.default-button {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.default-button:hover {
+    text-decoration: underline;
+}
+
+.reviews-single {
+    padding-bottom: 100px;
+}
+
+/* END SINGLE PRODUCT */
+
+/* BLOG */
+
+.blog-section {
+    padding: 45px 100px 0 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    width: 84px;
+    height: 1px;
+    background: #ACACAC;
+    color: #727272;
+}
+
+.author-item {
+    color: #727272;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.blog-content-blog-page {
+    width: 1058px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-page-content > p, .advice-item, .blog-block > p {
+    text-transform: none;
+}
+
+.right-author-text {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.blog-title > span {
+    font-family: 'Domine', serif;
+    font-size: 26px;
+}
+
+/* END BLOG */
+
+/* SHOPPING CART */
+.bag {
+    padding: 80px 120px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: stretch;
+    width: calc(100% - 240px);
+}
+
+.bag-block {
+    background-color: #FFEFEF;
+    width: calc(50% - 80px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.block-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bag-block-title {
+    width: 100%;
+    text-align: center;
+    font-family: "TT Chocolates Trl", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.half-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.half-column > input {
+    /*width: 80%;*/
+    padding: 10px 30px;
+    border: 1px solid #FF99AB;
+    font-size: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.half-column > button, .block-content > button {
+    width: 100%;
+    font-size: 18px;
+}
+
+.flex-column {
+    flex-direction: column;
+    gap: 0;
+}
+
+th {
+    font-size: 20px;
+    font-family: "TT Chocolates Trl", serif;
+}
+
+td:not(:first-child) {
+    text-align: center;
+}
+
+.product-quantity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.increase, .decrease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF99AB;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.increase:hover, .decrease:hover {
+    background-color: #ffa7a7;
+}
+
+.quantity {
+    height: 30px;
+    min-width: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+td {
+    padding: 10px 0;
+}
+
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+#delivery, #total {
+    text-align: right;
+}
+
+.cart-page {
+    margin-bottom: 100px;
+}
+
+/* END SHOPPING CART */
+
+.mobile-footer, .fake-mobile-footer {
+    display: none;
+}
+
+/* BLOG PAGE */
+.blog-page-content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog-block > p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.advices {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.no-margin {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.border-left {
+    border-top: 2px solid #FFE9E9;
+    border-left: 2px solid #FFE9E9;
+}
+
+.advice-item {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.blog-page-content > p {
+    font-size: 16px;
+}
+
+.article-title {
+    display: block;
+    margin: 20px 0;
+}
+
+.similar-products-container {
+    margin-top: 50px;
+}
+
+.similar-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.most-read-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.most-read-articles-container {
+    padding: 0 200px 100px 200px;
+}
+
+.most-read-articles > .blog-item > img {
+    width: 200px;
+    height: 150px;
+}
+
+.most-read-articles > .blog-item > .blog-item-content > .blog-item-title {
+    font-size: 14px;
+}
+
+/* END BLOG PAGE */
+
+/* FILTERS */
+.list {
+    list-style: none;
+}
+
+.list-item > label {
+    padding: 5px;
+}
+
+.list-item > label > input {
+    margin-right: 10px;
+    accent-color: #FFEFEF;
+}
+
+li > ul {
+    margin-left: 20px;
+}
+
+/* END FILTERS */
+
+
+.infinite-scroll {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.pagination {
+    display: none;
+}
+
+.secondary-image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-image > img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#main-image-container {
+    width: 150px;
+    height: 450px;
+}
+
+#main-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.produs-images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-link {
+    cursor: pointer;
+}
+

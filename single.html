@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Product</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/default-header.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="icon" href="./sources/mini-logo.png"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="big-header">
+        <img src="./sources/image-header.png" alt="image-heeader">
+        <span class="big-header-title">Round Lab</span>
+    </div>
+    <section class="default-header default-header">
+        <div class="default-header-content">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="item"><a href="./catalog.html">catalog</a></li>
+                    <li class="item"><a href="./about.html">despre noi</a></li>
+                    <li class="item"><a href="#">contacte</a></li>
+                </ul>
+            </nav>
+            <a href="./home.html" class="header-logo">
+                refresh <i>space</i>
+            </a>
+            <div class="other-menu">
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <img src="./sources/search.png" alt="lupa">
+                    </div>
+                    <span class="search-text">
+                        caută produsul
+                    </span>
+                    <div class="close-icon">
+                        <img src="./sources/close.png" alt="x">
+                    </div>
+                </div>
+                <div class="icons">
+                    <a href="./bag.html" class="icon add-bag">
+                        <img src="./sources/black-add-bag.png" alt="bag">
+                    </a>
+                    <div class="icon favorites">
+                        <img src="./sources/black-favorites.png" alt="favorites">
+                    </div>
+                    <a href="./log-in.html" class="icon account">
+                        <img src="./sources/black-user.png" alt="user">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="fake-header default-fake-header"></div>
+
+<main>
+    <section class="produs-container">
+        <div class="produs-images">
+            <div class="main-image" id="main-image-container">
+                <img src="./products/single-1.png" alt="single-1" id="main-image">
+            </div>
+            <div class="secondary-images">
+                <div class="secondary-image">
+                    <img src="./products/single-1.png" alt="single-1">
+                </div>
+                <div class="secondary-image">
+                    <img src="./products/single-3.jpg" alt="single-3">
+                </div>
+                <div class="secondary-image">
+                    <img src="./products/single-2.jpg" alt="single-2">
+                </div>
+            </div>
+        </div>
+        <div class="produs-info">
+            <h3 class="product-title">Dokdo Apă Micelară</h3>
+            <span class="product-brand">ROUND LAB</span>
+            <div class="product-specifications">
+                <div class="spec-item">
+                    <span class="spec-title">Volum: </span>
+                    <div class="spec-content">200 ml</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">Ingrediente: </span>
+                    <div class="spec-content">acid hialuronic, mesteacăn</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">Formula: </span>
+                    <div class="spec-content">ușoară</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">Country TM: </span>
+                    <div class="spec-content">Coreea de Sud</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">Produs în: </span>
+                    <div class="spec-content">Coreea de Sud</div>
+                </div>
+            </div>
+
+            <div class="spec-item cod-produs">
+                <span class="spec-title">Cod produs: </span>
+                <div class="spec-content">758874</div>
+            </div>
+
+            <span class="product-price">371 mdl</span>
+
+            <div class="product-actions">
+                <button class="pink-button" id="add-to-cart">Adaugă în coș</button>
+                <button class="default-button">Adaugă în favorite</button>
+            </div>
+        </div>
+    </section>
+    <div class="product-description">
+        <div class="acor-container">
+            <div class="acor-item">
+                <input type="checkbox" name="acor" id="1"/>
+                <label for="1">Descriere</label>
+                <div class="acor-body">
+                    <p class="info">Vă recomandăm să achiziționați apa micelară pentru față, de la ROUND LAB în
+                        magazinele
+                        Refresh Space
+                        din Chișinău sau cu livrare în Moldova.</p>
+                    <p class="info">Apa micelară exfoliantă delicată pe bază de apă de mare de la adâncime ROUND LAB
+                        1025
+                        Dokdo
+                        Apă Micelară restabilește echilibrul acido-bazic al pielii, menține un nivel optim de umiditate
+                        în
+                        piele și
+                        reglează glandele sebacee. Apa micelară promovează reînnoirea pielii, elimină celulele moarte
+                        ale
+                        pielii,
+                        excesul de sebum și curăță porii. De asemenea, pregătește pielea pentru aplicarea produselor de
+                        îngrijire a pielii.</p>
+                    <p class="info">Apa micelară asigură hidratarea intensivă și calmarea pielii, elimină uscăciunea și
+                        senzația
+                        de strângere, netezește și catifelează, dizolvă dopurile sebacee și restabilește nivelul de
+                        umiditate în epidermă. Produsul asigură un peeling moale zilnic, accelerează procesele de
+                        regenerare
+                        și încetinește procesul de îmbătrânire. Formula blândă a produsului nu provoacă iritații și este
+                        potrivită chiar și pentru pielea sensibilă.</p>
+                </div>
+            </div>
+
+            <div class="acor-item">
+                <input type="checkbox" name="acor" id="2"/>
+                <label for="2">Ingrediente active</label>
+                <div class="acor-body">
+                    <p class="info">Complexul patentat bazat pe enzimele <b>Hatching EX-07</b> este o alternativă la
+                        acizii
+                        AHA,
+                        BHA. Are efect de peeling, exfoliază celulele moarte ale pielii și accelerează procesele de
+                        regenerare. Hidratează profund și menține echilibrul hidric al pielii datorită compoziției sale
+                        minerale bogate, curăță eficient porii, dizolvă dopurile sebacee, ajută la restabilirea
+                        echilibrului
+                        acido-bazic și la normalizarea producției de sebum.</p>
+                    <p class="info"><b>Apa de mare de la adâncime</b> ajută la reducerea pierderii de umiditate,
+                        stimulează
+                        sinteza
+                        lipidelor în piele și activează toate procesele asociate cu hidratarea în epidermă. Tonifică,
+                        sporește efectul altor componente. Apa de mare de la adâncime din Insula Dokdo conține 72 de
+                        tipuri
+                        de minerale utile, macro și microelemente, care nu numai că mențin sănătatea pielii, ci și
+                        hidratează profund, întăresc imunitatea epidermei și prelungesc tinerețea.</p>
+                    <p class="info"><b>Pantenolul</b> restabilește și întărește bariera pielii deteriorate, hidratează
+                        și
+                        reține
+                        umiditatea. Calmează roșeața și iritația, are proprietăți antiinflamatorii și de vindecare a
+                        rănilor.</p>
+                    <p class="info"><b>Alantoina</b> înmoaie stratul cornos, favorizând separarea celulelor moarte și
+                        stimulează
+                        regenerarea țesuturilor, îngustează porii. Activează funcțiile de protecție ale sistemului
+                        imunitar
+                        și normalizează echilibrul lipidic, protejează pielea de uscare și fisuri, ajută la formarea
+                        țesutului sănătos și are proprietăți antiinflamatorii.</p>
+                    <p class="info"><b>Betaina</b> hidratează activ, are efect de condiționare, ameliorează iritația
+                        pielii.
+                    </p>
+                    <p class="info"><b>Extractul din trestie de zahăr</b> are efect antiseptic și exfoliant, netezește
+                        pielea și
+                        uniformizează tonusul.</p>
+                    <p class="info"><b>Extractul de mușchi irlandez</b> este un antioxidant puternic care încetinește
+                        procesul de
+                        îmbătrânire prin protejarea celulelor de radicalii liberi.</p>
+                </div>
+            </div>
+
+            <div class="acor-item">
+                <input type="checkbox" name="acor" id="3"/>
+                <label for="3">Mod de utilizare</label>
+                <div class="acor-body">
+                    <p class="info">Aplicați o cantitate mică de produs pe un disc de bumbac, stergeți fața și gâtul cu
+                        mișcări ușoare.
+                        Evitați zona din jurul ochilor.</p>
+                </div>
+            </div>
+
+            <div class="acor-item">
+                <input type="checkbox" name="acor" id="4"/>
+                <label for="4">Compoziție</label>
+                <div class="acor-body">
+                    <p class="info">Water, Butylene Glycol, Glycerin, Pentylene Glycol, Propanediol, Chondrus Crispus
+                        Extract, Saccharum
+                        Officinarum Ferment Extract, Seawater, 1,2-Hexanediol, Protease, Betaine, Panthenol,
+                        Ethylhexylglycerin, Allantoin, Xanthan Gum, Disodium EDTA.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="reviews">
+        <div class="section-title">
+            <span class="beautiful-title">
+                similar
+            </span>
+            <span class="main-title">
+                Produse similare
+            </span>
+        </div>
+        <div class="reviews-container cart-reviews">
+            <img src="./sources/left-arrow.png" class="control" id="left-button" alt="left">
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <img src="./products/1.png" alt="product-1">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">150ml</span>
+                        <span class="card-title-element">316mdl</span>
+                    </div>
+                    <span class="card-product-title">Ulei Hidrofil Cica 1%</span>
+                    <span class="card-product-brand">A-Derma</span>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <img src="./products/2.png" alt="product-2">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">1buc</span>
+                        <span class="card-title-element">40mdl</span>
+                    </div>
+                    <span class="card-product-title">Mască Din Țesătură</span>
+                    <span class="card-product-brand">A pieu</span>
+                </div>
+            </a>
+            <a href="#" class="card mobile-d-none">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <img src="./products/3.png" alt="product-3">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">200ml</span>
+                        <span class="card-title-element">182mdl</span>
+                    </div>
+                    <span class="card-product-title">Spumă De Curățare</span>
+                    <span class="card-product-brand">Round Lab</span>
+                </div>
+            </a>
+            <a href="#" class="card mobile-d-none">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <img src="./products/4.png" alt="product-4">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">50gr</span>
+                        <span class="card-title-element">420mdl</span>
+                    </div>
+                    <span class="card-product-title">Ser Iluminator Citrus</span>
+                    <span class="card-product-brand">Frudia</span>
+                </div>
+            </a>
+            <a href="#" class="card mobile-d-none">
+                <div class="card-image">
+                    <div class="heart">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="black" stroke-width="2"/>
+                            <path class="heart-container" fill="#C2061B"
+                                  d="M10.9156 18.7342L10.9141 18.733C7.80374 16.0432 5.30481 13.8768 3.57178 11.8548C1.84802 9.84361 1 8.10693 1 6.29428C1 3.35565 3.40984 1 6.6 1C8.4029 1 10.1373 1.80545 11.2567 3.04933L12 3.87527L12.7433 3.04933C13.8627 1.80545 15.5971 1 17.4 1C20.5902 1 23 3.35565 23 6.29428C23 8.10693 22.152 9.84361 20.4282 11.8548C18.6952 13.8768 16.1963 16.0432 13.0859 18.733L13.0844 18.7342L12 19.6757L10.9156 18.7342Z"
+                                  stroke="#C2061B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <img src="./products/1.png" alt="product-1">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-container">
+                        <span class="card-title-element">150ml</span>
+                        <span class="card-title-element">316mdl</span>
+                    </div>
+                    <span class="card-product-title">Ulei Hidrofil Cica 1%</span>
+                    <span class="card-product-brand">A-Derma</span>
+                </div>
+            </a>
+            <img src="./sources/right-arrow.png" class="control" id="right-button" alt="right">
+        </div>
+    </section>
+    <section class="reviews reviews-single">
+        <div class="section-title">
+            <span class="main-title">
+                Recenzii
+            </span>
+        </div>
+        <div class="reviews-container">
+            <img src="./sources/left-arrow.png" class="control" id="left" alt="left">
+
+            <div class="review-item">
+                <img src="./sources/photo-client1.png" alt="client1" class="review-author-image">
+                <div class="review-item-info">
+                    <span class="review-author">@lerqa</span>
+                    <div class="review-small-info">
+                        <div class="review-grade">
+                            <img src="./sources/rate.png" alt="">
+                        </div>
+                        <span class="review-date">30 mai, 2023</span>
+                    </div>
+                    <span class="review-title">Produse de calitate!</span>
+                    <p class="review-description">Am cumpărat un ser cu niacinamide și sunt uluită de calitatea și
+                        eficiența produsului! Mă voi întoarce cu siguranță!</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="./sources/photo-client2.png" alt="client1" class="review-author-image">
+                <div class="review-item-info">
+                    <span class="review-author">@svetka</span>
+                    <div class="review-small-info">
+                        <div class="review-grade">
+                            <img src="./sources/rate.png" alt="">
+                        </div>
+                        <span class="review-date">30 mai, 2023</span>
+                    </div>
+                    <span class="review-title">Anturaj minunat și consultanți profesionali!</span>
+                    <p class="review-description">Am fost pentru prima dată la Refresh Space și am fost încântată de
+                        atmosferă și potențialul consultanților!</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="./sources/photo-client3.png" alt="client1" class="review-author-image">
+                <div class="review-item-info">
+                    <span class="review-author">@allka</span>
+                    <div class="review-small-info">
+                        <div class="review-grade">
+                            <img src="./sources/rate.png" alt="">
+                        </div>
+                        <span class="review-date">30 mai, 2023</span>
+                    </div>
+                    <span class="review-title">Am găsit doar înțelegere și iubire!</span>
+                    <p class="review-description">Am fost nevoită să returnez un produs pe care l-am procurat fără să am
+                        nevoie și am fost plăcut surprinsă de atitudine și...</p>
+                </div>
+            </div>
+
+            <img src="./sources/right-arrow.png" class="control" id="right" alt="right">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section class="footer-primary">
+        <div class="footer-group">
+            <span class="footer-item-title">refresh space</span>
+            <form action="" class="send-message">
+                <p>Abonează-te la noutățile Refresh Space pentru a primi notificări despre produsele noi, oferte și
+                    reduceri.</p>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <button type="submit">
+                        <img src="./sources/arrow-right-button.png" alt="arrow-right">
+                    </button>
+                </div>
+                <label>
+                    <input type="checkbox" required>
+                    Accept termenii Politicii de Confidențialitate
+                </label>
+            </form>
+        </div>
+        <div class="footer-group footer-group-catalog">
+            <span class="footer-item-title">
+                Catalog
+            </span>
+            <span class="footer-item catalog-link" data-id="1">
+                Îngrijirea pielii
+            </span>
+            <span class="footer-item catalog-link" data-id="3">
+                Păr & Corp
+            </span>
+            <span class="footer-item catalog-link" data-id="2">
+                Cosmetică
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Suport
+            </span>
+            <span class="footer-item">
+                Plată & Livrare
+            </span>
+            <span class="footer-item">
+                Returnare
+            </span>
+            <span class="footer-item">
+                Cooperare
+            </span>
+            <span class="footer-item">
+                Întrebări frecvente
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Suplimentar
+            </span>
+            <a href="./about.html" class="footer-item">
+                Despre Noi
+            </a>
+            <a href="./blog.html" class="footer-item">
+                Blog
+            </a>
+            <span class="footer-item">
+                Oferte publice
+            </span>
+        </div>
+        <div class="footer-group">
+            <span class="footer-item-title">
+                Adrese
+            </span>
+            <span class="footer-item">
+                str. Lera 26, Lvov, LeraLand
+            </span>
+            <span class="footer-item">
+                Luni - Vineri
+            </span>
+            <span class="footer-item gray main-gray">
+                 09:00 AM - 09:00 PM
+            </span>
+            <span class="footer-item gray">
+                +373 76 783 043
+            </span>
+            <span class="footer-item gray main-gray">
+                lera.questions@lera.com
+            </span>
+        </div>
+    </section>
+    <section class="footer-secondary">
+        <span class="footer-item-title secondary-title">&#169; 2024 REFRESH SPACE</span>
+        <span class="footer-item-title secondary-title">Politica de Condidențialitate</span>
+        <span class="footer-item-title secondary-title">Politica de Cookies</span>
+        <span class="footer-item-title secondary-title">Termeni și Condiții</span>
+        <span class="footer-item-title secondary-title">Politici corporative</span>
+        <span class="footer-item-title secondary-title">Toate Drepturile Sunt Rezervate</span>
+    </section>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script><script src="./js/products.js"></script>
+<script src="./js/single.js"></script>
+<script src="./js/footer.js"></script>
+</body>
+</html>
